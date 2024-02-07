@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "youtube backend end to end",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [
     "youtube",
     "chai"
   ],
   "author": "Dhruv Bakshi",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
 }
