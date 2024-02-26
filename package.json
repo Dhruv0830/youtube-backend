@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "keywords": [
     "youtube",
@@ -14,7 +14,14 @@
   "author": "Dhruv Bakshi",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.11.20",
     "nodemon": "^3.0.3",
     "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.2.0"
   }
 }
